@@ -56,6 +56,7 @@ import com.android.systemui.keyguard.KeyguardUnlockAnimationController;
 import com.android.systemui.keyguard.KeyguardViewMediator;
 import com.android.systemui.keyguard.ScreenLifecycle;
 import com.android.systemui.keyguard.WakefulnessLifecycle;
+import com.android.systemui.model.SysUiState;
 import com.android.systemui.navigationbar.NavigationBarController;
 import com.android.systemui.plugins.FalsingManager;
 import com.android.systemui.plugins.PluginDependencyProvider;
@@ -236,6 +237,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             DeviceStateManager deviceStateManager,
             WiredChargingRippleController wiredChargingRippleController,
             IDreamManager dreamManager,
+            SysUiState sysUiState,
             WallpaperNotifier wallpaperNotifier,
             SmartSpaceController smartSpaceController,
             Optional<ReverseChargingViewController> reverseChargingViewControllerOptional,
@@ -270,7 +272,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                 featureFlags, keyguardUnlockAnimationController, delayableExecutor,
                 messageRouter, wallpaperManager, startingSurfaceOptional, activityLaunchAnimator,
                 jankMonitor, deviceStateManager, wiredChargingRippleController, dreamManager,
-                tunerService, refreshNavbarHandler);
+                tunerService, refreshNavbarHandler, sysUiState);
         mBatteryStateChangeCallback = new BatteryController.BatteryStateChangeCallback() {
             @Override
             public void onBatteryLevelChanged(int i, boolean z, boolean z2) {
