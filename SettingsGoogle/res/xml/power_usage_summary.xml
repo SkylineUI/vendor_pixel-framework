@@ -35,7 +35,7 @@
         android:title="@string/advanced_battery_preference_title"
         settings:searchable="false" />
 
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+    <com.skylineui.support.preferences.SystemSettingSwitchPreference
         android:key="battery_24_hrs_stats"
         android:title="@string/advanced_battery_preference_summary_with_hours"
         android:defaultValue="false"
