@@ -81,4 +81,10 @@
         android:title="@string/battery_footer_summary"
         settings:searchable="false" />
 
+    <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
+        android:order="4"
+        android:key="battery_temp"
+        android:title="@string/battery_temp"
+        android:selectable="false" />
+
 </PreferenceScreen>
