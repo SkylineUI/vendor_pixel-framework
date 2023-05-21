@@ -93,4 +93,10 @@
         android:title="@string/battery_temp"
         android:selectable="false" />
 
+        <SwitchPreference
+            android:key="doze_on_charge"
+            android:title="@string/doze_on_charge_title"
+            android:summary="@string/doze_on_charge_summary"
+            settings:controller="com.android.settings.display.DozeOnChargePreferenceController" />
+
 </PreferenceScreen>
