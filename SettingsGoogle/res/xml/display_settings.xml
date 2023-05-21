@@ -58,12 +58,6 @@
             settings:widgetLayout="@null" />
 
         <Preference
-            android:key="monet_settings"
-            android:title="@string/monet_settings_title"
-            android:summary="@string/monet_settings_sammary"
-            android:fragment="com.android.settings.custom.fragments.MonetSettings" />
-
-        <Preference
             android:fragment="com.android.settings.dream.DreamSettings"
             android:key="screensaver"
             android:title="@string/screensaver_settings_title"
